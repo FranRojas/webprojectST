@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: blueviolet;
+    color: aliceblue;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px green  solid;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.body-cont{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:repeat(2, 1fr);
+}
+.subword{
+    grid-column: 1/2;
+}
+.img{
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
+.bottom-container{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.bottom-container h3{
+    grid-column: 1/4;
+}
+
+.bottom-container div{
+    height: 300px;
+    width: 100%;
+    border: 1px solid black;
+    margin: 1rem;
+}
