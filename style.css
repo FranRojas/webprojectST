@@ -6,10 +6,21 @@
 body{
     background-color: blueviolet;
     color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.container{
+    align-items: center;
+    background-color: rgba(0,0,0,.25);
+    border: 2px solid black;
+    margin: 2rem;
 }
 
 .header{
     display: grid;
+    gap: 5px;
     grid-template-columns: repeat(2, 1fr);
     border: 1px green  solid;
     width: 100%;
@@ -18,8 +29,12 @@ body{
 
 .body-cont{
     display: grid;
+    gap: 5px;
     grid-template-columns:repeat(2, 1fr);
     grid-template-rows:repeat(2, 1fr);
+    padding:1rem;
+   
+
 }
 .subword{
     grid-column: 1/2;
@@ -27,12 +42,18 @@ body{
 .img{
     grid-column: 2/3;
     grid-row: 2/4;
+    height: 200px;
 }
 
 .bottom-container{
 
     display: grid;
+    gap: 30px;
     grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 3 rem;
+   
+ 
+
 }
 .bottom-container h3{
     grid-column: 1/4;
@@ -40,7 +61,6 @@ body{
 
 .bottom-container div{
     height: 300px;
-    width: 100%;
     border: 1px solid black;
-    margin: 1rem;
+   
 }
