@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: blueviolet;
+    background-color: rgb(100, 29, 167);
     color: aliceblue;
     display: flex;
     flex-direction: column;
@@ -16,6 +16,10 @@ body{
     background-color: rgba(0,0,0,.25);
     border: 2px solid black;
     margin: 2rem;
+    padding: 2rem;
+    display: grid;
+    gap: 2px;
+    grid-template-rows: 15px 1fr 1fr;
 }
 
 .header{
@@ -25,24 +29,45 @@ body{
     border: 1px green  solid;
     width: 100%;
     padding: 1.5rem;
+    border: 2px solid rgb(20, 215, 254);
 }
 
 .body-cont{
     display: grid;
     gap: 5px;
     grid-template-columns:repeat(2, 1fr);
-    grid-template-rows:repeat(2, 1fr);
+    height: 450px;
     padding:1rem;
-   
+    margin-top: 2rem;
+    margin-bottom: -2rem;
 
+   
+ border: 2px solid rgb(172, 232, 22);
 }
-.subword{
-    grid-column: 1/2;
+.pagename{
+ 
+   align-self: center;
+}
+.pagename h1{
+   font-size: 3.5rem; 
+   padding: 0.5rem;
+}
+.pagename p{
+    padding: 0.5rem;
+    margin-left: 10rem;
 }
 .img{
     grid-column: 2/3;
-    grid-row: 2/4;
-    height: 200px;
+    border: 2px solid white;
+    justify-self: center;
+    align-self: center;
+
+}
+
+img{
+    height: 300px;
+    width: 300px;
+
 }
 
 .bottom-container{
@@ -51,6 +76,7 @@ body{
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 3 rem;
+    border: 2px solid rgb(63, 24, 235);
    
  
 
@@ -63,4 +89,7 @@ body{
     height: 300px;
     border: 1px solid black;
    
+}
+.new{
+    background-color: orange;
 }
